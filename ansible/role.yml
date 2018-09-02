@@ -1,0 +1,22 @@
+---
+- name: Creating a role
+  hosts: test
+  tasks:
+ # - name: configuring ansible
+  #  script: /root/shell/shellscript/ansible.sh 
+  - name: ansible
+    command: yum upgrade python-setuptools -y
+        
+  - name:  two
+    command: yum install python-pip python-wheel -y 
+
+  - name: three
+    command: pip install ansible
+ 
+  - name: creating dir 
+    file: path=/root/slave state=directory
+
+  - name: Creating role in slave node
+    command: ansible-galaxy init --init-path=/root/slave/ apache
+    register: output
+  - debug: msg="{{output.stdout}}"

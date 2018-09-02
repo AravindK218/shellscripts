@@ -1,0 +1,4 @@
+[master]
+node1
+[test]
+k8s-master
