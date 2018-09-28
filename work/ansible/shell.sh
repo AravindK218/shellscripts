@@ -1,0 +1,11 @@
+apigee-service apigee-cassandra status
+apigee-service apigee-openldap status
+apigee-service apigee-postgresql status
+apigee-service apigee-qpidd status
+apigee-service apigee-zookeeper status
+apigee-service edge-management-server status
+apigee-service edge-message-processor status
+apigee-service edge-postgres-server status
+apigee-service edge-qpid-server status 
+apigee-service edge-router status
+apigee-service edge-sap-ui status

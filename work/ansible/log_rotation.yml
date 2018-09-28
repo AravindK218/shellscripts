@@ -1,0 +1,17 @@
+---
+- name: Playbook for log rotation
+  hosts: test
+  tasks:
+  - name: command execution for ip address
+    command: hostname -i
+  
+#  - name: compressing
+#    archive:
+#      path: /opt/apigee/var/log/*/*.log
+#      dest: /root/archive.$(date +%F).tar.gz
+#
+  - name: tar
+    script: /root/log.sh
+
+#  - name: moving
+#    command: scp /root/archive.$(date +%F).tar.gz root@mo-02b49a3c3:/var/lib/jenkins/workspace/safe/.

@@ -1,0 +1,844 @@
+2018-08-30 08:16:46,536 p=33772 u=root |  PLAY [Sample Run] *******************************************************************************************************************************************
+2018-08-30 08:16:46,567 p=33772 u=root |  TASK [Gathering Facts] **************************************************************************************************************************************
+2018-08-30 08:16:46,747 p=33772 u=root |  fatal: [172.18.102.35]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).\r\n", "unreachable": true}
+2018-08-30 08:16:46,749 p=33772 u=root |  	to retry, use: --limit @/root/ansible/sample.retry
+
+2018-08-30 08:16:46,749 p=33772 u=root |  PLAY RECAP **************************************************************************************************************************************************
+2018-08-30 08:16:46,750 p=33772 u=root |  172.18.102.35              : ok=0    changed=0    unreachable=1    failed=0   
+2018-08-30 08:57:15,115 p=36200 u=root |  PLAY [test] *************************************************************************************************************************************************
+2018-08-30 08:57:15,128 p=36200 u=root |  TASK [Gathering Facts] **************************************************************************************************************************************
+2018-08-30 08:57:17,829 p=36200 u=root |  ok: [localhost]
+2018-08-30 08:57:18,080 p=36200 u=root |  TASK [command] **********************************************************************************************************************************************
+2018-08-30 08:57:18,433 p=36200 u=root |  changed: [localhost]
+2018-08-30 08:57:18,435 p=36200 u=root |  PLAY RECAP **************************************************************************************************************************************************
+2018-08-30 08:57:18,436 p=36200 u=root |  localhost                  : ok=2    changed=1    unreachable=0    failed=0   
+2018-08-30 08:57:27,074 p=36482 u=root |  ansible-playbook 2.6.3
+  config file = /root/ansible/ansible.cfg
+  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /bin/ansible-playbook
+  python version = 2.7.5 (default, May 31 2018, 09:41:32) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2018-08-30 08:57:27,074 p=36482 u=root |  Using /root/ansible/ansible.cfg as config file
+2018-08-30 08:57:27,074 p=36482 u=root |  setting up inventory plugins
+2018-08-30 08:57:27,092 p=36482 u=root |  Parsed /root/ansible/hosts inventory source with ini plugin
+2018-08-30 08:57:27,194 p=36482 u=root |  Loading callback plugin default of type stdout, v2.0 from /usr/lib/python2.7/site-packages/ansible/plugins/callback/default.pyc
+2018-08-30 08:57:27,343 p=36482 u=root |  PLAYBOOK: test.yml ******************************************************************************************************************************************
+2018-08-30 08:57:27,344 p=36482 u=root |  1 plays in test.yml
+2018-08-30 08:57:27,376 p=36482 u=root |  PLAY [test] *************************************************************************************************************************************************
+2018-08-30 08:57:27,388 p=36482 u=root |  TASK [Gathering Facts] **************************************************************************************************************************************
+2018-08-30 08:57:27,388 p=36482 u=root |  task path: /root/ansible/test.yml:2
+2018-08-30 08:57:27,439 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/basic.py
+2018-08-30 08:57:27,440 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/__init__.py
+2018-08-30 08:57:27,441 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/namespace.py
+2018-08-30 08:57:27,441 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/ansible_collector.py
+2018-08-30 08:57:27,441 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/default_collectors.py
+2018-08-30 08:57:27,522 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/_text.py
+2018-08-30 08:57:27,522 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/parsing/convert_bool.py
+2018-08-30 08:57:27,522 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/parsing/__init__.py
+2018-08-30 08:57:27,522 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/pycompat24.py
+2018-08-30 08:57:27,524 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/six/__init__.py
+2018-08-30 08:57:27,552 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/compat.py
+2018-08-30 08:57:27,556 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/timeout.py
+2018-08-30 08:57:27,557 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/collector.py
+2018-08-30 08:57:27,574 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/network/freebsd.py
+2018-08-30 08:57:27,575 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/virtual/openbsd.py
+2018-08-30 08:57:27,575 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/network/base.py
+2018-08-30 08:57:27,575 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/hardware/dragonfly.py
+2018-08-30 08:57:27,575 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/network/dragonfly.py
+2018-08-30 08:57:27,576 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/hardware/aix.py
+2018-08-30 08:57:27,576 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/network/aix.py
+2018-08-30 08:57:27,577 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/hardware/linux.py
+2018-08-30 08:57:27,578 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/platform.py
+2018-08-30 08:57:27,578 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/hardware/hpux.py
+2018-08-30 08:57:27,578 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/cmdline.py
+2018-08-30 08:57:27,579 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/user.py
+2018-08-30 08:57:27,579 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/hardware/hurd.py
+2018-08-30 08:57:27,579 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/other/facter.py
+2018-08-30 08:57:27,580 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/network/hpux.py
+2018-08-30 08:57:27,581 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/distribution.py
+2018-08-30 08:57:27,581 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/virtual/freebsd.py
+2018-08-30 08:57:27,581 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/__init__.py
+2018-08-30 08:57:27,581 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/network/openbsd.py
+2018-08-30 08:57:27,582 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/network/darwin.py
+2018-08-30 08:57:27,582 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/network/iscsi.py
+2018-08-30 08:57:27,583 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/network/linux.py
+2018-08-30 08:57:27,583 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/hardware/sunos.py
+2018-08-30 08:57:27,584 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/network/sunos.py
+2018-08-30 08:57:27,584 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/chroot.py
+2018-08-30 08:57:27,584 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/apparmor.py
+2018-08-30 08:57:27,585 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/hardware/openbsd.py
+2018-08-30 08:57:27,585 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/local.py
+2018-08-30 08:57:27,586 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/other/ohai.py
+2018-08-30 08:57:27,586 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/other/__init__.py
+2018-08-30 08:57:27,586 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/service_mgr.py
+2018-08-30 08:57:27,587 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/network/hurd.py
+2018-08-30 08:57:27,587 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/virtual/hpux.py
+2018-08-30 08:57:27,587 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/fips.py
+2018-08-30 08:57:27,587 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/selinux.py
+2018-08-30 08:57:27,588 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/virtual/__init__.py
+2018-08-30 08:57:27,588 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/pkg_mgr.py
+2018-08-30 08:57:27,588 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/virtual/linux.py
+2018-08-30 08:57:27,589 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/virtual/base.py
+2018-08-30 08:57:27,589 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/hardware/darwin.py
+2018-08-30 08:57:27,589 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/virtual/dragonfly.py
+2018-08-30 08:57:27,590 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/ssh_pub_keys.py
+2018-08-30 08:57:27,590 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/network/__init__.py
+2018-08-30 08:57:27,590 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/hardware/__init__.py
+2018-08-30 08:57:27,590 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/lsb.py
+2018-08-30 08:57:27,591 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/date_time.py
+2018-08-30 08:57:27,591 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/virtual/netbsd.py
+2018-08-30 08:57:27,591 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/hardware/base.py
+2018-08-30 08:57:27,591 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/env.py
+2018-08-30 08:57:27,592 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/hardware/freebsd.py
+2018-08-30 08:57:27,592 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/network/netbsd.py
+2018-08-30 08:57:27,593 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/hardware/netbsd.py
+2018-08-30 08:57:27,593 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/caps.py
+2018-08-30 08:57:27,593 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/dns.py
+2018-08-30 08:57:27,594 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/virtual/sunos.py
+2018-08-30 08:57:27,594 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/system/python.py
+2018-08-30 08:57:27,595 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/network/generic_bsd.py
+2018-08-30 08:57:27,606 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/virtual/sysctl.py
+2018-08-30 08:57:27,606 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/utils.py
+2018-08-30 08:57:27,727 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/facts/sysctl.py
+2018-08-30 08:57:27,777 p=36482 u=root |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/system/setup.py
+2018-08-30 08:57:29,785 p=36482 u=root |  ok: [localhost]
+2018-08-30 08:57:29,786 p=36482 u=root |  META: ran handlers
+2018-08-30 08:57:30,030 p=36482 u=root |  TASK [command] **********************************************************************************************************************************************
+2018-08-30 08:57:30,031 p=36482 u=root |  task path: /root/ansible/test.yml:5
+2018-08-30 08:57:30,125 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/basic.py
+2018-08-30 08:57:30,208 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/_text.py
+2018-08-30 08:57:30,208 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/parsing/convert_bool.py
+2018-08-30 08:57:30,208 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/parsing/__init__.py
+2018-08-30 08:57:30,209 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/pycompat24.py
+2018-08-30 08:57:30,210 p=36482 u=root |  Using module_utils file /usr/lib/python2.7/site-packages/ansible/module_utils/six/__init__.py
+2018-08-30 08:57:30,239 p=36482 u=root |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/commands/command.py
+2018-08-30 08:57:30,384 p=36482 u=root |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": [
+        "date"
+    ], 
+    "delta": "0:00:00.003614", 
+    "end": "2018-08-30 08:57:30.358968", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "date", 
+            "_uses_shell": false, 
+            "argv": null, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "stdin": null, 
+            "warn": true
+        }
+    }, 
+    "rc": 0, 
+    "start": "2018-08-30 08:57:30.355354", 
+    "stderr": "", 
+    "stderr_lines": [], 
+    "stdout": "Thu Aug 30 08:57:30 UTC 2018", 
+    "stdout_lines": [
+        "Thu Aug 30 08:57:30 UTC 2018"
+    ]
+}
+2018-08-30 08:57:30,385 p=36482 u=root |  META: ran handlers
+2018-08-30 08:57:30,386 p=36482 u=root |  META: ran handlers
+2018-08-30 08:57:30,387 p=36482 u=root |  PLAY RECAP **************************************************************************************************************************************************
+2018-08-30 08:57:30,387 p=36482 u=root |  localhost                  : ok=2    changed=1    unreachable=0    failed=0   
+2018-08-30 08:59:37,776 p=36875 u=root |  ansible-playbook 2.6.3
+  config file = /root/ansible/ansible.cfg
+  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /bin/ansible-playbook
+  python version = 2.7.5 (default, May 31 2018, 09:41:32) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2018-08-30 08:59:37,776 p=36875 u=root |  Using /root/ansible/ansible.cfg as config file
+2018-08-30 08:59:37,776 p=36875 u=root |  setting up inventory plugins
+2018-08-30 08:59:37,794 p=36875 u=root |  Parsed /root/ansible/hosts inventory source with ini plugin
+2018-08-30 08:59:37,896 p=36875 u=root |  Loading callback plugin default of type stdout, v2.0 from /usr/lib/python2.7/site-packages/ansible/plugins/callback/default.pyc
+2018-08-30 08:59:38,040 p=36875 u=root |  PLAYBOOK: sample.yml ****************************************************************************************************************************************
+2018-08-30 08:59:38,041 p=36875 u=root |  1 plays in sample.yml
+2018-08-30 08:59:38,073 p=36875 u=root |  PLAY [Sample Run] *******************************************************************************************************************************************
+2018-08-30 08:59:38,085 p=36875 u=root |  TASK [Gathering Facts] **************************************************************************************************************************************
+2018-08-30 08:59:38,085 p=36875 u=root |  task path: /root/ansible/sample.yml:2
+2018-08-30 08:59:38,452 p=36875 u=root |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/system/setup.py
+2018-08-30 08:59:40,485 p=36875 u=root |  ok: [localhost]
+2018-08-30 08:59:40,486 p=36875 u=root |  META: ran handlers
+2018-08-30 08:59:40,724 p=36875 u=root |  TASK [Executing something] **********************************************************************************************************************************
+2018-08-30 08:59:40,725 p=36875 u=root |  task path: /root/ansible/sample.yml:5
+2018-08-30 08:59:40,925 p=36875 u=root |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/commands/command.py
+2018-08-30 08:59:41,066 p=36875 u=root |  changed: [localhost] => {
+    "changed": true, 
+    "cmd": [
+        "uname", 
+        "-a"
+    ], 
+    "delta": "0:00:00.003394", 
+    "end": "2018-08-30 08:59:41.039765", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "uname -a", 
+            "_uses_shell": false, 
+            "argv": null, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "stdin": null, 
+            "warn": true
+        }
+    }, 
+    "rc": 0, 
+    "start": "2018-08-30 08:59:41.036371", 
+    "stderr": "", 
+    "stderr_lines": [], 
+    "stdout": "Linux mo-02b49a3c3.dmzmo.sap.corp 3.10.0-862.9.1.el7.x86_64 #1 SMP Wed Jun 27 04:30:39 EDT 2018 x86_64 x86_64 x86_64 GNU/Linux", 
+    "stdout_lines": [
+        "Linux mo-02b49a3c3.dmzmo.sap.corp 3.10.0-862.9.1.el7.x86_64 #1 SMP Wed Jun 27 04:30:39 EDT 2018 x86_64 x86_64 x86_64 GNU/Linux"
+    ]
+}
+2018-08-30 08:59:41,329 p=36875 u=root |  TASK [debug] ************************************************************************************************************************************************
+2018-08-30 08:59:41,329 p=36875 u=root |  task path: /root/ansible/sample.yml:9
+2018-08-30 08:59:41,365 p=36875 u=root |  ok: [localhost] => {
+    "msg": {
+        "changed": true, 
+        "cmd": [
+            "uname", 
+            "-a"
+        ], 
+        "delta": "0:00:00.003394", 
+        "end": "2018-08-30 08:59:41.039765", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2018-08-30 08:59:41.036371", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "Linux mo-02b49a3c3.dmzmo.sap.corp 3.10.0-862.9.1.el7.x86_64 #1 SMP Wed Jun 27 04:30:39 EDT 2018 x86_64 x86_64 x86_64 GNU/Linux", 
+        "stdout_lines": [
+            "Linux mo-02b49a3c3.dmzmo.sap.corp 3.10.0-862.9.1.el7.x86_64 #1 SMP Wed Jun 27 04:30:39 EDT 2018 x86_64 x86_64 x86_64 GNU/Linux"
+        ]
+    }
+}
+2018-08-30 08:59:41,367 p=36875 u=root |  META: ran handlers
+2018-08-30 08:59:41,367 p=36875 u=root |  META: ran handlers
+2018-08-30 08:59:41,370 p=36875 u=root |  PLAY RECAP **************************************************************************************************************************************************
+2018-08-30 08:59:41,370 p=36875 u=root |  localhost                  : ok=3    changed=1    unreachable=0    failed=0   
+2018-08-30 09:00:39,444 p=37213 u=root |  ansible-playbook 2.6.3
+  config file = /root/ansible/ansible.cfg
+  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /bin/ansible-playbook
+  python version = 2.7.5 (default, May 31 2018, 09:41:32) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2018-08-30 09:00:39,445 p=37213 u=root |  Using /root/ansible/ansible.cfg as config file
+2018-08-30 09:00:39,445 p=37213 u=root |  setting up inventory plugins
+2018-08-30 09:00:39,462 p=37213 u=root |  Parsed /root/ansible/hosts inventory source with ini plugin
+2018-08-30 09:00:39,561 p=37213 u=root |  Loading callback plugin default of type stdout, v2.0 from /usr/lib/python2.7/site-packages/ansible/plugins/callback/default.pyc
+2018-08-30 09:00:39,705 p=37213 u=root |  PLAYBOOK: sample.yml ****************************************************************************************************************************************
+2018-08-30 09:00:39,706 p=37213 u=root |  1 plays in sample.yml
+2018-08-30 09:00:39,737 p=37213 u=root |  PLAY [Sample Run] *******************************************************************************************************************************************
+2018-08-30 09:00:39,749 p=37213 u=root |  TASK [Gathering Facts] **************************************************************************************************************************************
+2018-08-30 09:00:39,749 p=37213 u=root |  task path: /root/ansible/sample.yml:2
+2018-08-30 09:00:39,879 p=37213 u=root |  fatal: [172.18.102.35]: UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: OpenSSH_7.4p1, OpenSSL 1.0.2k-fips  26 Jan 2017\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 58: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug1: Control socket \"/root/.ansible/cp/a11fc7bcef\" does not exist\r\ndebug2: resolving \"172.18.102.35\" port 22\r\ndebug2: ssh_connect_direct: needpriv 0\r\ndebug1: Connecting to 172.18.102.35 [172.18.102.35] port 22.\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug1: fd 3 clearing O_NONBLOCK\r\ndebug1: Connection established.\r\ndebug3: timeout: 10000 ms remain after connect\r\ndebug1: permanently_set_uid: 0/0\r\ndebug1: key_load_public: No such file or directory\r\ndebug1: identity file /root/.ssh/id_rsa type -1\r\ndebug1: key_load_public: No such file or directory\r\ndebug1: identity file /root/.ssh/id_rsa-cert type -1\r\ndebug1: key_load_public: No such file or directory\r\ndebug1: identity file /root/.ssh/id_dsa type -1\r\ndebug1: key_load_public: No such file or directory\r\ndebug1: identity file /root/.ssh/id_dsa-cert type -1\r\ndebug1: key_load_public: No such file or directory\r\ndebug1: identity file /root/.ssh/id_ecdsa type -1\r\ndebug1: key_load_public: No such file or directory\r\ndebug1: identity file /root/.ssh/id_ecdsa-cert type -1\r\ndebug1: key_load_public: No such file or directory\r\ndebug1: identity file /root/.ssh/id_ed25519 type -1\r\ndebug1: key_load_public: No such file or directory\r\ndebug1: identity file /root/.ssh/id_ed25519-cert type -1\r\ndebug1: Enabling compatibility mode for protocol 2.0\r\ndebug1: Local version string SSH-2.0-OpenSSH_7.4\r\ndebug1: Remote protocol version 2.0, remote software version OpenSSH_7.4\r\ndebug1: match: OpenSSH_7.4 pat OpenSSH* compat 0x04000000\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug1: Authenticating to 172.18.102.35:22 as 'root'\r\ndebug3: hostkeys_foreach: reading file \"/root/.ssh/known_hosts\"\r\ndebug3: record_hostkey: found key type ECDSA in file /root/.ssh/known_hosts:1\r\ndebug3: load_hostkeys: loaded 1 keys from 172.18.102.35\r\ndebug3: order_hostkeyalgs: prefer hostkeyalgs: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521\r\ndebug3: send packet: type 20\r\ndebug1: SSH2_MSG_KEXINIT sent\r\ndebug3: receive packet: type 20\r\ndebug1: SSH2_MSG_KEXINIT received\r\ndebug2: local client KEXINIT proposal\r\ndebug2: KEX algorithms: curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1,ext-info-c\r\ndebug2: host key algorithms: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ssh-dss-cert-v01@openssh.com,ssh-ed25519,rsa-sha2-512,rsa-sha2-256,ssh-rsa,ssh-dss\r\ndebug2: ciphers ctos: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-cbc,aes192-cbc,aes256-cbc\r\ndebug2: ciphers stoc: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-cbc,aes192-cbc,aes256-cbc\r\ndebug2: MACs ctos: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1\r\ndebug2: MACs stoc: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1\r\ndebug2: compression ctos: zlib@openssh.com,zlib,none\r\ndebug2: compression stoc: zlib@openssh.com,zlib,none\r\ndebug2: languages ctos: \r\ndebug2: languages stoc: \r\ndebug2: first_kex_follows 0 \r\ndebug2: reserved 0 \r\ndebug2: peer server KEXINIT proposal\r\ndebug2: KEX algorithms: curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1\r\ndebug2: host key algorithms: ssh-rsa,rsa-sha2-512,rsa-sha2-256,ecdsa-sha2-nistp256,ssh-ed25519\r\ndebug2: ciphers ctos: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-cbc,aes192-cbc,aes256-cbc,blowfish-cbc,cast128-cbc,3des-cbc\r\ndebug2: ciphers stoc: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-cbc,aes192-cbc,aes256-cbc,blowfish-cbc,cast128-cbc,3des-cbc\r\ndebug2: MACs ctos: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1\r\ndebug2: MACs stoc: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1\r\ndebug2: compression ctos: none,zlib@openssh.com\r\ndebug2: compression stoc: none,zlib@openssh.com\r\ndebug2: languages ctos: \r\ndebug2: languages stoc: \r\ndebug2: first_kex_follows 0 \r\ndebug2: reserved 0 \r\ndebug1: kex: algorithm: curve25519-sha256\r\ndebug1: kex: host key algorithm: ecdsa-sha2-nistp256\r\ndebug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: zlib@openssh.com\r\ndebug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: zlib@openssh.com\r\ndebug1: kex: curve25519-sha256 need=64 dh_need=64\r\ndebug1: kex: curve25519-sha256 need=64 dh_need=64\r\ndebug3: send packet: type 30\r\ndebug1: expecting SSH2_MSG_KEX_ECDH_REPLY\r\ndebug3: receive packet: type 31\r\ndebug1: Server host key: ecdsa-sha2-nistp256 SHA256:HCjXTG2K+tjSMnxEj8iBuoDREDQLGyOEuy6elII77Ho\r\ndebug3: hostkeys_foreach: reading file \"/root/.ssh/known_hosts\"\r\ndebug3: record_hostkey: found key type ECDSA in file /root/.ssh/known_hosts:1\r\ndebug3: load_hostkeys: loaded 1 keys from 172.18.102.35\r\ndebug1: Host '172.18.102.35' is known and matches the ECDSA host key.\r\ndebug1: Found key in /root/.ssh/known_hosts:1\r\ndebug3: send packet: type 21\r\ndebug2: set_newkeys: mode 1\r\ndebug1: rekey after 134217728 blocks\r\ndebug1: SSH2_MSG_NEWKEYS sent\r\ndebug1: expecting SSH2_MSG_NEWKEYS\r\ndebug3: receive packet: type 21\r\ndebug1: SSH2_MSG_NEWKEYS received\r\ndebug2: set_newkeys: mode 0\r\ndebug1: rekey after 134217728 blocks\r\ndebug2: key: /root/.ssh/id_rsa ((nil))\r\ndebug2: key: /root/.ssh/id_dsa ((nil))\r\ndebug2: key: /root/.ssh/id_ecdsa ((nil))\r\ndebug2: key: /root/.ssh/id_ed25519 ((nil))\r\ndebug3: send packet: type 5\r\ndebug3: receive packet: type 7\r\ndebug1: SSH2_MSG_EXT_INFO received\r\ndebug1: kex_input_ext_info: server-sig-algs=<rsa-sha2-256,rsa-sha2-512>\r\ndebug3: receive packet: type 6\r\ndebug2: service_accept: ssh-userauth\r\ndebug1: SSH2_MSG_SERVICE_ACCEPT received\r\ndebug3: send packet: type 50\r\ndebug3: receive packet: type 51\r\ndebug1: Authentications that can continue: publickey,gssapi-keyex,gssapi-with-mic,password\r\ndebug3: start over, passed a different list publickey,gssapi-keyex,gssapi-with-mic,password\r\ndebug3: preferred gssapi-with-mic,gssapi-keyex,hostbased,publickey\r\ndebug3: authmethod_lookup gssapi-with-mic\r\ndebug3: remaining preferred: gssapi-keyex,hostbased,publickey\r\ndebug3: authmethod_is_enabled gssapi-with-mic\r\ndebug1: Next authentication method: gssapi-with-mic\r\ndebug1: Unspecified GSS failure.  Minor code may provide more information\nNo Kerberos credentials available (default cache: KEYRING:persistent:0)\n\r\ndebug1: Unspecified GSS failure.  Minor code may provide more information\nNo Kerberos credentials available (default cache: KEYRING:persistent:0)\n\r\ndebug2: we did not send a packet, disable method\r\ndebug3: authmethod_lookup gssapi-keyex\r\ndebug3: remaining preferred: hostbased,publickey\r\ndebug3: authmethod_is_enabled gssapi-keyex\r\ndebug1: Next authentication method: gssapi-keyex\r\ndebug1: No valid Key exchange context\r\ndebug2: we did not send a packet, disable method\r\ndebug3: authmethod_lookup publickey\r\ndebug3: remaining preferred: ,publickey\r\ndebug3: authmethod_is_enabled publickey\r\ndebug1: Next authentication method: publickey\r\ndebug1: Trying private key: /root/.ssh/id_rsa\r\ndebug3: no such identity: /root/.ssh/id_rsa: No such file or directory\r\ndebug1: Trying private key: /root/.ssh/id_dsa\r\ndebug3: no such identity: /root/.ssh/id_dsa: No such file or directory\r\ndebug1: Trying private key: /root/.ssh/id_ecdsa\r\ndebug3: no such identity: /root/.ssh/id_ecdsa: No such file or directory\r\ndebug1: Trying private key: /root/.ssh/id_ed25519\r\ndebug3: no such identity: /root/.ssh/id_ed25519: No such file or directory\r\ndebug2: we did not send a packet, disable method\r\ndebug1: No more authentication methods to try.\r\nPermission denied (publickey,gssapi-keyex,gssapi-with-mic,password).\r\n", 
+    "unreachable": true
+}
+2018-08-30 09:00:39,881 p=37213 u=root |  	to retry, use: --limit @/root/ansible/sample.retry
+
+2018-08-30 09:00:39,882 p=37213 u=root |  PLAY RECAP **************************************************************************************************************************************************
+2018-08-30 09:00:39,882 p=37213 u=root |  172.18.102.35              : ok=0    changed=0    unreachable=1    failed=0   
+2018-08-30 09:06:41,262 p=37564 u=root |  ansible-playbook 2.6.3
+  config file = /root/ansible/ansible.cfg
+  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /bin/ansible-playbook
+  python version = 2.7.5 (default, May 31 2018, 09:41:32) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2018-08-30 09:06:41,262 p=37564 u=root |  Using /root/ansible/ansible.cfg as config file
+2018-08-30 09:06:41,263 p=37564 u=root |  setting up inventory plugins
+2018-08-30 09:06:41,281 p=37564 u=root |  Parsed /root/ansible/hosts inventory source with ini plugin
+2018-08-30 09:06:41,296 p=37564 u=root |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to have been in '/root/ansible/sample.yml': line 12, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  - name: attaching
+    - include: test.yml
+    ^ here
+
+2018-08-30 09:07:40,540 p=37624 u=root |  ansible-playbook 2.6.3
+  config file = /root/ansible/ansible.cfg
+  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /bin/ansible-playbook
+  python version = 2.7.5 (default, May 31 2018, 09:41:32) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2018-08-30 09:07:40,540 p=37624 u=root |  Using /root/ansible/ansible.cfg as config file
+2018-08-30 09:07:40,541 p=37624 u=root |  setting up inventory plugins
+2018-08-30 09:07:40,558 p=37624 u=root |  Parsed /root/ansible/hosts inventory source with ini plugin
+2018-08-30 09:07:40,664 p=37624 u=root |  statically imported: /root/ansible/test.yml
+2018-08-30 09:07:40,666 p=37624 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/root/ansible/test.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: test
+  ^ here
+
+2018-08-30 09:09:14,062 p=37736 u=root |  ansible-playbook 2.6.3
+  config file = /root/ansible/ansible.cfg
+  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /bin/ansible-playbook
+  python version = 2.7.5 (default, May 31 2018, 09:41:32) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2018-08-30 09:09:14,062 p=37736 u=root |  Using /root/ansible/ansible.cfg as config file
+2018-08-30 09:09:14,063 p=37736 u=root |  setting up inventory plugins
+2018-08-30 09:09:14,080 p=37736 u=root |  Parsed /root/ansible/hosts inventory source with ini plugin
+2018-08-30 09:09:14,184 p=37736 u=root |  statically imported: /root/ansible/test.yml
+2018-08-30 09:09:14,185 p=37736 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/root/ansible/test.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: test
+  ^ here
+
+2018-08-30 09:11:36,852 p=37865 u=root |  ansible-playbook 2.6.3
+  config file = /root/ansible/ansible.cfg
+  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /bin/ansible-playbook
+  python version = 2.7.5 (default, May 31 2018, 09:41:32) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2018-08-30 09:11:36,852 p=37865 u=root |  Using /root/ansible/ansible.cfg as config file
+2018-08-30 09:11:36,852 p=37865 u=root |  setting up inventory plugins
+2018-08-30 09:11:36,869 p=37865 u=root |  Parsed /root/ansible/hosts inventory source with ini plugin
+2018-08-30 09:11:36,974 p=37865 u=root |  statically imported: /root/ansible/test.yml
+2018-08-30 09:11:36,975 p=37865 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/root/ansible/test.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: test
+  ^ here
+
+2018-08-30 09:13:04,953 p=37959 u=root |  ansible-playbook 2.6.3
+  config file = /root/ansible/ansible.cfg
+  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /bin/ansible-playbook
+  python version = 2.7.5 (default, May 31 2018, 09:41:32) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2018-08-30 09:13:04,953 p=37959 u=root |  Using /root/ansible/ansible.cfg as config file
+2018-08-30 09:13:04,954 p=37959 u=root |  setting up inventory plugins
+2018-08-30 09:13:04,971 p=37959 u=root |  Parsed /root/ansible/hosts inventory source with ini plugin
+2018-08-30 09:13:05,072 p=37959 u=root |  statically imported: /root/ansible/test.yml
+2018-08-30 09:13:05,073 p=37959 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/root/ansible/test.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: test
+  ^ here
+
+2018-08-30 09:14:09,253 p=38025 u=root |  ansible-playbook 2.6.3
+  config file = /root/ansible/ansible.cfg
+  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /bin/ansible-playbook
+  python version = 2.7.5 (default, May 31 2018, 09:41:32) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2018-08-30 09:14:09,253 p=38025 u=root |  Using /root/ansible/ansible.cfg as config file
+2018-08-30 09:14:09,253 p=38025 u=root |  setting up inventory plugins
+2018-08-30 09:14:09,270 p=38025 u=root |  Parsed /root/ansible/hosts inventory source with ini plugin
+2018-08-30 09:14:09,372 p=38025 u=root |  statically imported: /root/ansible/test.yml
+2018-08-30 09:14:09,373 p=38025 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/root/ansible/test.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: test
+  ^ here
+
+2018-08-30 09:14:45,764 p=38067 u=root |  PLAY [test] *************************************************************************************************************************************************
+2018-08-30 09:14:45,776 p=38067 u=root |  TASK [Gathering Facts] **************************************************************************************************************************************
+2018-08-30 09:14:48,177 p=38067 u=root |  ok: [localhost]
+2018-08-30 09:14:48,414 p=38067 u=root |  TASK [command] **********************************************************************************************************************************************
+2018-08-30 09:14:48,749 p=38067 u=root |  changed: [localhost]
+2018-08-30 09:14:48,751 p=38067 u=root |  PLAY RECAP **************************************************************************************************************************************************
+2018-08-30 09:14:48,751 p=38067 u=root |  localhost                  : ok=2    changed=1    unreachable=0    failed=0   
+2018-08-30 09:14:56,084 p=38347 u=root |  ERROR! the playbook: sample. could not be found
+2018-08-30 09:14:59,475 p=38359 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/root/ansible/test.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: test
+  ^ here
+
+2018-08-30 09:20:57,454 p=38801 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/root/ansible/test.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: test
+  ^ here
+
+2018-08-30 09:22:22,210 p=38881 u=root |  PLAY [localhost] ********************************************************************************************************************************************
+2018-08-30 09:22:22,223 p=38881 u=root |  TASK [Gathering Facts] **************************************************************************************************************************************
+2018-08-30 09:22:24,646 p=38881 u=root |  ok: [localhost]
+2018-08-30 09:22:24,891 p=38881 u=root |  TASK [Executing something] **********************************************************************************************************************************
+2018-08-30 09:22:25,243 p=38881 u=root |  changed: [localhost]
+2018-08-30 09:22:25,516 p=38881 u=root |  TASK [debug] ************************************************************************************************************************************************
+2018-08-30 09:22:25,552 p=38881 u=root |  ok: [localhost] => {
+    "msg": "Linux mo-02b49a3c3.dmzmo.sap.corp 3.10.0-862.9.1.el7.x86_64 #1 SMP Wed Jun 27 04:30:39 EDT 2018 x86_64 x86_64 x86_64 GNU/Linux"
+}
+2018-08-30 09:22:25,562 p=38881 u=root |  PLAY [test] *************************************************************************************************************************************************
+2018-08-30 09:22:25,816 p=38881 u=root |  TASK [Gathering Facts] **************************************************************************************************************************************
+2018-08-30 09:22:27,909 p=38881 u=root |  ok: [localhost]
+2018-08-30 09:22:28,157 p=38881 u=root |  TASK [command] **********************************************************************************************************************************************
+2018-08-30 09:22:28,353 p=38881 u=root |  changed: [localhost]
+2018-08-30 09:22:28,355 p=38881 u=root |  PLAY RECAP **************************************************************************************************************************************************
+2018-08-30 09:22:28,355 p=38881 u=root |  localhost                  : ok=5    changed=2    unreachable=0    failed=0   
+2018-09-19 06:07:42,438 p=24183 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 06:07:42,465 p=24183 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 06:07:48,753 p=24183 u=root |  ok: [172.18.102.120]
+2018-09-19 06:07:49,004 p=24183 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 06:07:52,673 p=24183 u=root |  changed: [172.18.102.120]
+2018-09-19 06:07:52,676 p=24183 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 06:07:52,676 p=24183 u=root |  172.18.102.120             : ok=2    changed=1    unreachable=0    failed=0   
+2018-09-19 06:08:01,847 p=24232 u=root |  ansible-playbook 2.6.3
+  config file = /root/ansible/ansible.cfg
+  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.5 (default, May 31 2018, 09:41:32) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2018-09-19 06:08:01,847 p=24232 u=root |  Using /root/ansible/ansible.cfg as config file
+2018-09-19 06:08:02,120 p=24232 u=root |  PLAYBOOK: test.yml **************************************************************************************************************************************************************************
+2018-09-19 06:08:02,121 p=24232 u=root |  1 plays in test.yml
+2018-09-19 06:08:02,153 p=24232 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 06:08:02,165 p=24232 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 06:08:02,165 p=24232 u=root |  task path: /root/ansible/test.yml:2
+2018-09-19 06:08:07,293 p=24232 u=root |  ok: [172.18.102.120]
+2018-09-19 06:08:07,294 p=24232 u=root |  META: ran handlers
+2018-09-19 06:08:07,564 p=24232 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 06:08:07,565 p=24232 u=root |  task path: /root/ansible/test.yml:5
+2018-09-19 06:08:11,163 p=24232 u=root |  changed: [172.18.102.120] => {"changed": true, "cmd": ["apigee-all", "status"], "delta": "0:00:02.426897", "end": "2018-09-19 06:08:11.084160", "rc": 0, "start": "2018-09-19 06:08:08.657263", "stderr": "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n+ apigee-service apigee-cassandra status\napigee-service: apigee-cassandra: OK\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n+ apigee-service apigee-openldap status\napigee-service: apigee-openldap: OK\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n+ apigee-service apigee-postgresql status\napigee-service: apigee-postgresql: OK\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n+ apigee-service apigee-qpidd status\napigee-service: apigee-qpidd: OK\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n+ apigee-service apigee-zookeeper status\napigee-service: apigee-zookeeper: OK\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n+ apigee-service edge-management-server status\napigee-service: edge-management-server: OK\n+ apigee-service edge-message-processor status\napigee-service: edge-message-processor: OK\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n+ apigee-service edge-postgres-server status\napigee-service: edge-postgres-server: OK\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n+ apigee-service edge-qpid-server status\napigee-service: edge-qpid-server: OK\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe\n+ apigee-service edge-router status\napigee-service: edge-router: OK\n+ apigee-service edge-sap-ui status\napigee-service: edge-sap-ui: OK", "stderr_lines": ["/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "+ apigee-service apigee-cassandra status", "apigee-service: apigee-cassandra: OK", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "+ apigee-service apigee-openldap status", "apigee-service: apigee-openldap: OK", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "+ apigee-service apigee-postgresql status", "apigee-service: apigee-postgresql: OK", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "+ apigee-service apigee-qpidd status", "apigee-service: apigee-qpidd: OK", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "+ apigee-service apigee-zookeeper status", "apigee-service: apigee-zookeeper: OK", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "+ apigee-service edge-management-server status", "apigee-service: edge-management-server: OK", "+ apigee-service edge-message-processor status", "apigee-service: edge-message-processor: OK", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "+ apigee-service edge-postgres-server status", "apigee-service: edge-postgres-server: OK", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "+ apigee-service edge-qpid-server status", "apigee-service: edge-qpid-server: OK", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "/opt/apigee/apigee-service-4.17.05-0.0.572/bin/../lib/logging.sh: line 41: echo: write error: Broken pipe", "+ apigee-service edge-router status", "apigee-service: edge-router: OK", "+ apigee-service edge-sap-ui status", "apigee-service: edge-sap-ui: OK"], "stdout": "", "stdout_lines": []}
+2018-09-19 06:08:11,164 p=24232 u=root |  META: ran handlers
+2018-09-19 06:08:11,164 p=24232 u=root |  META: ran handlers
+2018-09-19 06:08:11,165 p=24232 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 06:08:11,166 p=24232 u=root |  172.18.102.120             : ok=2    changed=1    unreachable=0    failed=0   
+2018-09-19 06:09:56,640 p=24358 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 06:09:56,653 p=24358 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 06:10:01,499 p=24358 u=root |  ok: [172.18.102.120]
+2018-09-19 06:10:01,763 p=24358 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 06:10:05,334 p=24358 u=root |  changed: [172.18.102.120]
+2018-09-19 06:10:05,618 p=24358 u=root |  TASK [debug] ********************************************************************************************************************************************************************************
+2018-09-19 06:10:05,679 p=24358 u=root |  ok: [172.18.102.120] => {
+    "msg": ""
+}
+2018-09-19 06:10:05,681 p=24358 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 06:10:05,681 p=24358 u=root |  172.18.102.120             : ok=3    changed=1    unreachable=0    failed=0   
+2018-09-19 06:10:34,761 p=24424 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 06:10:34,774 p=24424 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 06:10:39,326 p=24424 u=root |  ok: [172.18.102.120]
+2018-09-19 06:10:39,611 p=24424 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 06:10:43,655 p=24424 u=root |  changed: [172.18.102.120]
+2018-09-19 06:10:43,941 p=24424 u=root |  TASK [debug] ********************************************************************************************************************************************************************************
+2018-09-19 06:10:43,968 p=24424 u=root |  fatal: [172.18.102.120]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'stdout' is undefined\n\nThe error appears to have been in '/root/ansible/test.yml': line 9, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n   -  debug: msg=\"{{stdout.output}}\"\n      ^ here\nWe could be wrong, but this one looks like it might be an issue with\nmissing quotes.  Always quote template expression brackets when they\nstart a value. For instance:\n\n    with_items:\n      - {{ foo }}\n\nShould be written as:\n\n    with_items:\n      - \"{{ foo }}\"\n"}
+2018-09-19 06:10:43,969 p=24424 u=root |  	to retry, use: --limit @/root/ansible/test.retry
+
+2018-09-19 06:10:43,969 p=24424 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 06:10:43,970 p=24424 u=root |  172.18.102.120             : ok=2    changed=1    unreachable=0    failed=1   
+2018-09-19 06:12:25,001 p=24546 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 06:12:25,013 p=24546 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 06:12:29,781 p=24546 u=root |  ok: [172.18.102.120]
+2018-09-19 06:12:30,054 p=24546 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 06:12:34,064 p=24546 u=root |  changed: [172.18.102.120]
+2018-09-19 06:12:34,314 p=24546 u=root |  TASK [debug] ********************************************************************************************************************************************************************************
+2018-09-19 06:12:34,334 p=24546 u=root |  fatal: [172.18.102.120]: FAILED! => {"msg": "template error while templating string: expected token 'end of print statement', got 'apigee'. String: {{status\napigee-service.output}}"}
+2018-09-19 06:12:34,338 p=24546 u=root |  	to retry, use: --limit @/root/ansible/test.retry
+
+2018-09-19 06:12:34,339 p=24546 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 06:12:34,339 p=24546 u=root |  172.18.102.120             : ok=2    changed=1    unreachable=0    failed=1   
+2018-09-19 06:13:31,405 p=24635 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 06:13:31,417 p=24635 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 06:13:35,803 p=24635 u=root |  ok: [172.18.102.120]
+2018-09-19 06:13:36,077 p=24635 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 06:13:39,982 p=24635 u=root |  changed: [172.18.102.120]
+2018-09-19 06:13:40,250 p=24635 u=root |  TASK [debug] ********************************************************************************************************************************************************************************
+2018-09-19 06:13:40,273 p=24635 u=root |  fatal: [172.18.102.120]: FAILED! => {"msg": "template error while templating string: expected token 'end of print statement', got 'apigee'. String: {{output.status\napigee-service}}"}
+2018-09-19 06:13:40,277 p=24635 u=root |  	to retry, use: --limit @/root/ansible/test.retry
+
+2018-09-19 06:13:40,277 p=24635 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 06:13:40,277 p=24635 u=root |  172.18.102.120             : ok=2    changed=1    unreachable=0    failed=1   
+2018-09-19 06:18:49,454 p=24957 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 06:18:49,466 p=24957 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 06:18:54,166 p=24957 u=root |  ok: [172.18.102.120]
+2018-09-19 06:18:54,439 p=24957 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 06:18:58,422 p=24957 u=root |  changed: [172.18.102.120]
+2018-09-19 06:18:58,710 p=24957 u=root |  TASK [debug] ********************************************************************************************************************************************************************************
+2018-09-19 06:18:58,735 p=24957 u=root |  fatal: [172.18.102.120]: FAILED! => {"msg": "template error while templating string: expected token 'end of print statement', got 'apigee'. String: {{output.apigee-service apigee-cassandra status}}"}
+2018-09-19 06:18:58,737 p=24957 u=root |  	to retry, use: --limit @/root/ansible/test.retry
+
+2018-09-19 06:18:58,737 p=24957 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 06:18:58,738 p=24957 u=root |  172.18.102.120             : ok=2    changed=1    unreachable=0    failed=1   
+2018-09-19 06:19:48,842 p=25042 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 06:19:48,855 p=25042 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 06:19:53,138 p=25042 u=root |  ok: [172.18.102.120]
+2018-09-19 06:19:53,408 p=25042 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 06:19:57,405 p=25042 u=root |  changed: [172.18.102.120]
+2018-09-19 06:19:57,657 p=25042 u=root |  TASK [debug] ********************************************************************************************************************************************************************************
+2018-09-19 06:19:57,679 p=25042 u=root |  fatal: [172.18.102.120]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: Unable to look up a name or access an attribute in template string ({{output.apigee-cassandra}}).\nMake sure your variable name does not contain invalid characters like '-': unsupported operand type(s) for -: 'StrictUndefined' and 'StrictUndefined'\n\nThe error appears to have been in '/root/ansible/test.yml': line 9, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n   -  debug: msg=\"{{output.apigee-cassandra}}\"\n      ^ here\nWe could be wrong, but this one looks like it might be an issue with\nmissing quotes.  Always quote template expression brackets when they\nstart a value. For instance:\n\n    with_items:\n      - {{ foo }}\n\nShould be written as:\n\n    with_items:\n      - \"{{ foo }}\"\n"}
+2018-09-19 06:19:57,681 p=25042 u=root |  	to retry, use: --limit @/root/ansible/test.retry
+
+2018-09-19 06:19:57,681 p=25042 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 06:19:57,681 p=25042 u=root |  172.18.102.120             : ok=2    changed=1    unreachable=0    failed=1   
+2018-09-19 06:20:24,965 p=25104 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 06:20:24,978 p=25104 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 06:20:29,414 p=25104 u=root |  ok: [172.18.102.120]
+2018-09-19 06:20:29,683 p=25104 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 06:20:33,738 p=25104 u=root |  changed: [172.18.102.120]
+2018-09-19 06:20:34,021 p=25104 u=root |  TASK [debug] ********************************************************************************************************************************************************************************
+2018-09-19 06:20:34,046 p=25104 u=root |  fatal: [172.18.102.120]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: Unable to look up a name or access an attribute in template string ({{output.apigee-service}}).\nMake sure your variable name does not contain invalid characters like '-': unsupported operand type(s) for -: 'StrictUndefined' and 'StrictUndefined'\n\nThe error appears to have been in '/root/ansible/test.yml': line 9, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n   -  debug: msg=\"{{output.apigee-service}}\"\n      ^ here\nWe could be wrong, but this one looks like it might be an issue with\nmissing quotes.  Always quote template expression brackets when they\nstart a value. For instance:\n\n    with_items:\n      - {{ foo }}\n\nShould be written as:\n\n    with_items:\n      - \"{{ foo }}\"\n"}
+2018-09-19 06:20:34,047 p=25104 u=root |  	to retry, use: --limit @/root/ansible/test.retry
+
+2018-09-19 06:20:34,047 p=25104 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 06:20:34,048 p=25104 u=root |  172.18.102.120             : ok=2    changed=1    unreachable=0    failed=1   
+2018-09-19 06:57:21,749 p=27099 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 06:57:21,761 p=27099 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 06:57:26,448 p=27099 u=root |  ok: [172.18.102.120]
+2018-09-19 06:57:26,732 p=27099 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 06:57:26,998 p=27099 u=root |  fatal: [172.18.102.120]: FAILED! => {"changed": false, "msg": "Could not find or access 'bash'\nSearched in:\n\t/root/ansible/files/bash\n\t/root/ansible/bash\n\t/root/ansible/files/bash\n\t/root/ansible/bash on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2018-09-19 06:57:27,000 p=27099 u=root |  	to retry, use: --limit @/root/ansible/test.retry
+
+2018-09-19 06:57:27,000 p=27099 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 06:57:27,000 p=27099 u=root |  172.18.102.120             : ok=1    changed=0    unreachable=0    failed=1   
+2018-09-19 06:58:04,826 p=27170 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 06:58:04,838 p=27170 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 06:58:09,291 p=27170 u=root |  ok: [172.18.102.120]
+2018-09-19 06:58:09,567 p=27170 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 06:58:11,601 p=27170 u=root |  fatal: [172.18.102.120]: FAILED! => {"changed": true, "msg": "non-zero return code", "rc": 5, "stderr": "Shared connection to 172.18.102.120 closed.\r\n", "stderr_lines": ["Shared connection to 172.18.102.120 closed."], "stdout": "apigee-service: apigee-cassandra: OK\r\napigee-service: apigee-openldap: OK\r\napigee-service: apigee-postgresql: OK\r\napigee-service: apigee-qpidd: OK\r\napigee-service: apigee-zookeeper: OK\r\napigee-service: edge-management-server: OK\r\napigee-service: edge-message-processor: OK\r\napigee-service: edge-postgres-server: OK\r\napigee-service: edge-qpid-server: OK\r\napigee-service: edge-router: OK\r\napigee-service: edge-ui: Error: missing dir /opt/apigee/edge-ui .  is edge-ui installed?\r\n", "stdout_lines": ["apigee-service: apigee-cassandra: OK", "apigee-service: apigee-openldap: OK", "apigee-service: apigee-postgresql: OK", "apigee-service: apigee-qpidd: OK", "apigee-service: apigee-zookeeper: OK", "apigee-service: edge-management-server: OK", "apigee-service: edge-message-processor: OK", "apigee-service: edge-postgres-server: OK", "apigee-service: edge-qpid-server: OK", "apigee-service: edge-router: OK", "apigee-service: edge-ui: Error: missing dir /opt/apigee/edge-ui .  is edge-ui installed?"]}
+2018-09-19 06:58:11,603 p=27170 u=root |  	to retry, use: --limit @/root/ansible/test.retry
+
+2018-09-19 06:58:11,603 p=27170 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 06:58:11,603 p=27170 u=root |  172.18.102.120             : ok=1    changed=0    unreachable=0    failed=1   
+2018-09-19 06:59:59,350 p=27298 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 06:59:59,363 p=27298 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 07:00:03,786 p=27298 u=root |  ok: [172.18.102.120]
+2018-09-19 07:00:04,058 p=27298 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 07:00:05,882 p=27298 u=root |  changed: [172.18.102.120]
+2018-09-19 07:00:05,884 p=27298 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 07:00:05,884 p=27298 u=root |  172.18.102.120             : ok=2    changed=1    unreachable=0    failed=0   
+2018-09-19 07:00:39,014 p=27378 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 07:00:39,027 p=27378 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 07:00:43,470 p=27378 u=root |  ok: [172.18.102.120]
+2018-09-19 07:00:43,740 p=27378 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 07:00:45,721 p=27378 u=root |  changed: [172.18.102.120]
+2018-09-19 07:00:45,969 p=27378 u=root |  TASK [debug] ********************************************************************************************************************************************************************************
+2018-09-19 07:00:46,025 p=27378 u=root |  ok: [172.18.102.120] => {
+    "msg": {
+        "changed": true, 
+        "failed": false, 
+        "rc": 0, 
+        "stderr": "Shared connection to 172.18.102.120 closed.\r\n", 
+        "stderr_lines": [
+            "Shared connection to 172.18.102.120 closed."
+        ], 
+        "stdout": "apigee-service: apigee-cassandra: OK\r\napigee-service: apigee-openldap: OK\r\napigee-service: apigee-postgresql: OK\r\napigee-service: apigee-qpidd: OK\r\napigee-service: apigee-zookeeper: OK\r\napigee-service: edge-management-server: OK\r\napigee-service: edge-message-processor: OK\r\napigee-service: edge-postgres-server: OK\r\napigee-service: edge-qpid-server: OK\r\napigee-service: edge-router: OK\r\napigee-service: edge-sap-ui: OK\r\n", 
+        "stdout_lines": [
+            "apigee-service: apigee-cassandra: OK", 
+            "apigee-service: apigee-openldap: OK", 
+            "apigee-service: apigee-postgresql: OK", 
+            "apigee-service: apigee-qpidd: OK", 
+            "apigee-service: apigee-zookeeper: OK", 
+            "apigee-service: edge-management-server: OK", 
+            "apigee-service: edge-message-processor: OK", 
+            "apigee-service: edge-postgres-server: OK", 
+            "apigee-service: edge-qpid-server: OK", 
+            "apigee-service: edge-router: OK", 
+            "apigee-service: edge-sap-ui: OK"
+        ]
+    }
+}
+2018-09-19 07:00:46,027 p=27378 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 07:00:46,027 p=27378 u=root |  172.18.102.120             : ok=3    changed=1    unreachable=0    failed=0   
+2018-09-19 07:10:00,506 p=28005 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 07:10:00,520 p=28005 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 07:10:04,970 p=28005 u=root |  ok: [172.18.102.120]
+2018-09-19 07:10:05,253 p=28005 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 07:10:06,977 p=28005 u=root |  changed: [172.18.102.120]
+2018-09-19 07:10:07,238 p=28005 u=root |  TASK [debug] ********************************************************************************************************************************************************************************
+2018-09-19 07:10:07,257 p=28005 u=root |  fatal: [172.18.102.120]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'outputi' is undefined\n\nThe error appears to have been in '/root/ansible/test.yml': line 9, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n   -  debug: msg=\"{{outputi.stdout_lines}}\"\n      ^ here\nWe could be wrong, but this one looks like it might be an issue with\nmissing quotes.  Always quote template expression brackets when they\nstart a value. For instance:\n\n    with_items:\n      - {{ foo }}\n\nShould be written as:\n\n    with_items:\n      - \"{{ foo }}\"\n"}
+2018-09-19 07:10:07,261 p=28005 u=root |  	to retry, use: --limit @/root/ansible/test.retry
+
+2018-09-19 07:10:07,261 p=28005 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 07:10:07,261 p=28005 u=root |  172.18.102.120             : ok=2    changed=1    unreachable=0    failed=1   
+2018-09-19 07:10:26,601 p=28062 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 07:10:26,613 p=28062 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 07:10:30,921 p=28062 u=root |  ok: [172.18.102.120]
+2018-09-19 07:10:31,200 p=28062 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 07:10:33,189 p=28062 u=root |  changed: [172.18.102.120]
+2018-09-19 07:10:33,437 p=28062 u=root |  TASK [debug] ********************************************************************************************************************************************************************************
+2018-09-19 07:10:33,489 p=28062 u=root |  ok: [172.18.102.120] => {
+    "msg": [
+        "apigee-service: apigee-cassandra: OK", 
+        "apigee-service: apigee-openldap: OK", 
+        "apigee-service: apigee-postgresql: OK", 
+        "apigee-service: apigee-qpidd: OK", 
+        "apigee-service: apigee-zookeeper: OK", 
+        "apigee-service: edge-management-server: OK", 
+        "apigee-service: edge-message-processor: OK", 
+        "apigee-service: edge-postgres-server: OK", 
+        "apigee-service: edge-qpid-server: OK", 
+        "apigee-service: edge-router: OK", 
+        "apigee-service: edge-sap-ui: OK"
+    ]
+}
+2018-09-19 07:10:33,491 p=28062 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 07:10:33,491 p=28062 u=root |  172.18.102.120             : ok=3    changed=1    unreachable=0    failed=0   
+2018-09-19 07:17:53,405 p=28498 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 07:17:53,418 p=28498 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 07:17:58,007 p=28498 u=root |  ok: [172.18.102.120]
+2018-09-19 07:17:58,292 p=28498 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 07:18:00,267 p=28498 u=root |  changed: [172.18.102.120]
+2018-09-19 07:18:00,533 p=28498 u=root |  TASK [debug] ********************************************************************************************************************************************************************************
+2018-09-19 07:18:00,593 p=28498 u=root |  ok: [172.18.102.120] => {
+    "msg": [
+        "apigee-service: apigee-cassandra: OK", 
+        "apigee-service: apigee-openldap: OK", 
+        "apigee-service: apigee-postgresql: OK", 
+        "apigee-service: apigee-qpidd: OK", 
+        "apigee-service: apigee-zookeeper: OK", 
+        "apigee-service: edge-management-server: OK", 
+        "apigee-service: edge-message-processor: OK", 
+        "apigee-service: edge-postgres-server: OK", 
+        "apigee-service: edge-qpid-server: OK", 
+        "apigee-service: edge-router: OK", 
+        "apigee-service: edge-sap-ui: OK"
+    ]
+}
+2018-09-19 07:18:00,596 p=28498 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 07:18:00,596 p=28498 u=root |  172.18.102.120             : ok=3    changed=1    unreachable=0    failed=0   
+2018-09-19 07:18:28,646 p=28565 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-19 07:18:28,658 p=28565 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-19 07:18:32,974 p=28565 u=root |  ok: [172.18.102.120]
+2018-09-19 07:18:33,254 p=28565 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-19 07:18:35,216 p=28565 u=root |  changed: [172.18.102.120]
+2018-09-19 07:18:35,481 p=28565 u=root |  TASK [debug] ********************************************************************************************************************************************************************************
+2018-09-19 07:18:35,538 p=28565 u=root |  ok: [172.18.102.120] => {
+    "msg": [
+        "apigee-service: apigee-cassandra: OK", 
+        "apigee-service: apigee-openldap: OK", 
+        "apigee-service: apigee-postgresql: OK", 
+        "apigee-service: apigee-qpidd: OK", 
+        "apigee-service: apigee-zookeeper: OK", 
+        "apigee-service: edge-management-server: OK", 
+        "apigee-service: edge-message-processor: OK", 
+        "apigee-service: edge-postgres-server: OK", 
+        "apigee-service: edge-qpid-server: OK", 
+        "apigee-service: edge-router: OK", 
+        "apigee-service: edge-sap-ui: OK"
+    ]
+}
+2018-09-19 07:18:35,540 p=28565 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-19 07:18:35,540 p=28565 u=root |  172.18.102.120             : ok=3    changed=1    unreachable=0    failed=0   
+2018-09-19 07:23:54,961 p=28885 u=root |  PLAY [test] ********************************************************************
+2018-09-19 07:23:54,974 p=28885 u=root |  TASK [Gathering Facts] *********************************************************
+2018-09-19 07:23:59,567 p=28885 u=root |  ok: [172.18.102.120]
+2018-09-19 07:23:59,838 p=28885 u=root |  TASK [command] *****************************************************************
+2018-09-19 07:24:01,898 p=28885 u=root |  changed: [172.18.102.120]
+2018-09-19 07:24:02,155 p=28885 u=root |  TASK [debug] *******************************************************************
+2018-09-19 07:24:02,209 p=28885 u=root |  ok: [172.18.102.120] => {
+    "msg": [
+        "apigee-service: apigee-cassandra: OK", 
+        "apigee-service: apigee-openldap: OK", 
+        "apigee-service: apigee-postgresql: OK", 
+        "apigee-service: apigee-qpidd: OK", 
+        "apigee-service: apigee-zookeeper: OK", 
+        "apigee-service: edge-management-server: OK", 
+        "apigee-service: edge-message-processor: OK", 
+        "apigee-service: edge-postgres-server: OK", 
+        "apigee-service: edge-qpid-server: OK", 
+        "apigee-service: edge-router: OK", 
+        "apigee-service: edge-sap-ui: OK"
+    ]
+}
+2018-09-19 07:24:02,211 p=28885 u=root |  PLAY RECAP *********************************************************************
+2018-09-19 07:24:02,211 p=28885 u=root |  172.18.102.120             : ok=3    changed=1    unreachable=0    failed=0   
+2018-09-20 08:50:09,374 p=50851 u=root |  PLAY [localhost] ****************************************************************************************************************************************************************************
+2018-09-20 08:50:09,399 p=50851 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-20 08:50:12,325 p=50851 u=root |  ok: [localhost]
+2018-09-20 08:50:12,608 p=50851 u=root |  TASK [Executing something] ******************************************************************************************************************************************************************
+2018-09-20 08:50:12,923 p=50851 u=root |  changed: [localhost]
+2018-09-20 08:50:13,186 p=50851 u=root |  TASK [debug] ********************************************************************************************************************************************************************************
+2018-09-20 08:50:13,220 p=50851 u=root |  ok: [localhost] => {
+    "msg": "Linux mo-02b49a3c3.dmzmo.sap.corp 3.10.0-862.9.1.el7.x86_64 #1 SMP Wed Jun 27 04:30:39 EDT 2018 x86_64 x86_64 x86_64 GNU/Linux"
+}
+2018-09-20 08:50:13,228 p=50851 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-20 08:50:13,234 p=50851 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-20 08:50:19,297 p=50851 u=root |  ok: [172.18.102.120]
+2018-09-20 08:50:19,545 p=50851 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-20 08:50:21,645 p=50851 u=root |  changed: [172.18.102.120]
+2018-09-20 08:50:21,964 p=50851 u=root |  TASK [debug] ********************************************************************************************************************************************************************************
+2018-09-20 08:50:22,026 p=50851 u=root |  ok: [172.18.102.120] => {
+    "msg": [
+        "apigee-service: apigee-cassandra: OK", 
+        "apigee-service: apigee-openldap: OK", 
+        "apigee-service: apigee-postgresql: OK", 
+        "apigee-service: apigee-qpidd: OK", 
+        "apigee-service: apigee-zookeeper: OK", 
+        "apigee-service: edge-management-server: OK", 
+        "apigee-service: edge-message-processor: OK", 
+        "apigee-service: edge-postgres-server: OK", 
+        "apigee-service: edge-qpid-server: OK", 
+        "apigee-service: edge-router: OK", 
+        "apigee-service: edge-sap-ui: OK"
+    ]
+}
+2018-09-20 08:50:22,028 p=50851 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-20 08:50:22,028 p=50851 u=root |  172.18.102.120             : ok=3    changed=1    unreachable=0    failed=0   
+2018-09-20 08:50:22,028 p=50851 u=root |  localhost                  : ok=3    changed=1    unreachable=0    failed=0   
+2018-09-24 10:28:32,561 p=56835 u=root |  PLAY [Playbook for log rotation] ***********************************************
+2018-09-24 10:28:32,579 p=56835 u=root |  TASK [Gathering Facts] *********************************************************
+2018-09-24 10:28:38,541 p=56835 u=root |  ok: [172.18.102.120]
+2018-09-24 10:28:38,809 p=56835 u=root |  TASK [command execution for ip address] ****************************************
+2018-09-24 10:28:40,069 p=56835 u=root |  changed: [172.18.102.120]
+2018-09-24 10:28:40,345 p=56835 u=root |  TASK [compressing] *************************************************************
+2018-09-24 10:28:41,351 p=56835 u=root |   [WARNING]: Consider using the unarchive module rather than running tar.  If
+you need to use command because unarchive is insufficient you can add
+warn=False to this command task or set command_warnings=False in ansible.cfg to
+get rid of this message.
+
+2018-09-24 10:28:41,351 p=56835 u=root |  fatal: [172.18.102.120]: FAILED! => {"changed": true, "cmd": ["tar", "-cvf", "archive.$(date", "+%F).tar.gz", "/opt/apigee/var/log/*/*.log"], "delta": "0:00:00.009397", "end": "2018-09-24 10:28:41.262001", "msg": "non-zero return code", "rc": 2, "start": "2018-09-24 10:28:41.252604", "stderr": "tar: +%F).tar.gz: Cannot stat: No such file or directory\ntar: Removing leading `/' from member names\ntar: /opt/apigee/var/log/*/*.log: Cannot stat: No such file or directory\ntar: Exiting with failure status due to previous errors", "stderr_lines": ["tar: +%F).tar.gz: Cannot stat: No such file or directory", "tar: Removing leading `/' from member names", "tar: /opt/apigee/var/log/*/*.log: Cannot stat: No such file or directory", "tar: Exiting with failure status due to previous errors"], "stdout": "", "stdout_lines": []}
+2018-09-24 10:28:41,353 p=56835 u=root |  	to retry, use: --limit @/root/ansible/log_rotation.retry
+
+2018-09-24 10:28:41,353 p=56835 u=root |  PLAY RECAP *********************************************************************
+2018-09-24 10:28:41,353 p=56835 u=root |  172.18.102.120             : ok=2    changed=1    unreachable=0    failed=1   
+2018-09-24 10:33:03,319 p=57140 u=root |  PLAY [Playbook for log rotation] ***********************************************
+2018-09-24 10:33:03,332 p=57140 u=root |  TASK [Gathering Facts] *********************************************************
+2018-09-24 10:33:08,191 p=57140 u=root |  ok: [172.18.102.120]
+2018-09-24 10:33:08,488 p=57140 u=root |  TASK [command execution for ip address] ****************************************
+2018-09-24 10:33:09,787 p=57140 u=root |  changed: [172.18.102.120]
+2018-09-24 10:33:10,086 p=57140 u=root |  TASK [compressing] *************************************************************
+2018-09-24 10:33:11,297 p=57140 u=root |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: OSError: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/archive.$(date +%F).tar.gz'
+2018-09-24 10:33:11,297 p=57140 u=root |  fatal: [172.18.102.120]: FAILED! => {"changed": false, "msg": "Error when writing tar.gz archive at /var/lib/jenkins/workspace/archive.$(date +%F).tar.gz: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/archive.$(date +%F).tar.gz'"}
+2018-09-24 10:33:11,300 p=57140 u=root |  	to retry, use: --limit @/root/ansible/log_rotation.retry
+
+2018-09-24 10:33:11,301 p=57140 u=root |  PLAY RECAP *********************************************************************
+2018-09-24 10:33:11,301 p=57140 u=root |  172.18.102.120             : ok=2    changed=1    unreachable=0    failed=1   
+2018-09-24 10:34:30,634 p=57260 u=root |  PLAY [Playbook for log rotation] ***********************************************
+2018-09-24 10:34:30,648 p=57260 u=root |  TASK [Gathering Facts] *********************************************************
+2018-09-24 10:34:35,415 p=57260 u=root |  ok: [172.18.102.120]
+2018-09-24 10:34:35,721 p=57260 u=root |  TASK [command execution for ip address] ****************************************
+2018-09-24 10:34:36,906 p=57260 u=root |  changed: [172.18.102.120]
+2018-09-24 10:34:37,207 p=57260 u=root |  TASK [compressing] *************************************************************
+2018-09-24 10:34:40,955 p=57260 u=root |  changed: [172.18.102.120]
+2018-09-24 10:34:40,961 p=57260 u=root |  PLAY RECAP *********************************************************************
+2018-09-24 10:34:40,966 p=57260 u=root |  172.18.102.120             : ok=3    changed=2    unreachable=0    failed=0   
+2018-09-24 10:39:13,466 p=57648 u=root |  PLAY [Playbook for log rotation] ***********************************************
+2018-09-24 10:39:13,480 p=57648 u=root |  TASK [Gathering Facts] *********************************************************
+2018-09-24 10:39:18,432 p=57648 u=root |  ok: [172.18.102.120]
+2018-09-24 10:39:18,718 p=57648 u=root |  TASK [command execution for ip address] ****************************************
+2018-09-24 10:39:19,952 p=57648 u=root |  changed: [172.18.102.120]
+2018-09-24 10:39:20,231 p=57648 u=root |  TASK [tar] *********************************************************************
+2018-09-24 10:39:21,705 p=57648 u=root |  changed: [172.18.102.120]
+2018-09-24 10:39:21,707 p=57648 u=root |  PLAY RECAP *********************************************************************
+2018-09-24 10:39:21,708 p=57648 u=root |  172.18.102.120             : ok=3    changed=2    unreachable=0    failed=0   
+2018-09-25 06:00:05,327 p=56809 u=root |  PLAY [Playbook for log rotation] ***********************************************
+2018-09-25 06:00:05,355 p=56809 u=root |  TASK [Gathering Facts] *********************************************************
+2018-09-25 06:00:14,048 p=56809 u=root |  ok: [172.18.102.120]
+2018-09-25 06:00:14,649 p=56809 u=root |  TASK [command execution for ip address] ****************************************
+2018-09-25 06:00:16,341 p=56809 u=root |  changed: [172.18.102.120]
+2018-09-25 06:00:16,646 p=56809 u=root |  TASK [tar] *********************************************************************
+2018-09-25 06:00:18,031 p=56809 u=root |  changed: [172.18.102.120]
+2018-09-25 06:00:18,037 p=56809 u=root |  PLAY RECAP *********************************************************************
+2018-09-25 06:00:18,037 p=56809 u=root |  172.18.102.120             : ok=3    changed=2    unreachable=0    failed=0   
+2018-09-26 06:00:07,736 p=7515 u=root |  PLAY [Playbook for log rotation] ***********************************************
+2018-09-26 06:00:07,761 p=7515 u=root |  TASK [Gathering Facts] *********************************************************
+2018-09-26 06:00:16,181 p=7515 u=root |  ok: [172.18.102.120]
+2018-09-26 06:00:16,715 p=7515 u=root |  TASK [command execution for ip address] ****************************************
+2018-09-26 06:00:18,256 p=7515 u=root |  changed: [172.18.102.120]
+2018-09-26 06:00:18,536 p=7515 u=root |  TASK [tar] *********************************************************************
+2018-09-26 06:00:19,963 p=7515 u=root |  changed: [172.18.102.120]
+2018-09-26 06:00:19,966 p=7515 u=root |  PLAY RECAP *********************************************************************
+2018-09-26 06:00:19,966 p=7515 u=root |  172.18.102.120             : ok=3    changed=2    unreachable=0    failed=0   
+2018-09-27 06:00:04,698 p=25852 u=root |  PLAY [Playbook for log rotation] ***********************************************
+2018-09-27 06:00:04,728 p=25852 u=root |  TASK [Gathering Facts] *********************************************************
+2018-09-27 06:00:12,510 p=25852 u=root |  ok: [172.18.102.120]
+2018-09-27 06:00:13,042 p=25852 u=root |  TASK [command execution for ip address] ****************************************
+2018-09-27 06:00:14,607 p=25852 u=root |  changed: [172.18.102.120]
+2018-09-27 06:00:14,887 p=25852 u=root |  TASK [tar] *********************************************************************
+2018-09-27 06:00:16,332 p=25852 u=root |  changed: [172.18.102.120]
+2018-09-27 06:00:16,334 p=25852 u=root |  PLAY RECAP *********************************************************************
+2018-09-27 06:00:16,334 p=25852 u=root |  172.18.102.120             : ok=3    changed=2    unreachable=0    failed=0   
+2018-09-28 06:00:05,873 p=40559 u=root |  PLAY [Playbook for log rotation] ***********************************************
+2018-09-28 06:00:05,899 p=40559 u=root |  TASK [Gathering Facts] *********************************************************
+2018-09-28 06:00:12,329 p=40559 u=root |  ok: [172.18.102.120]
+2018-09-28 06:00:12,895 p=40559 u=root |  TASK [command execution for ip address] ****************************************
+2018-09-28 06:00:14,230 p=40559 u=root |  changed: [172.18.102.120]
+2018-09-28 06:00:14,513 p=40559 u=root |  TASK [tar] *********************************************************************
+2018-09-28 06:00:16,088 p=40559 u=root |  changed: [172.18.102.120]
+2018-09-28 06:00:16,091 p=40559 u=root |  PLAY RECAP *********************************************************************
+2018-09-28 06:00:16,091 p=40559 u=root |  172.18.102.120             : ok=3    changed=2    unreachable=0    failed=0   
+2018-09-28 11:19:48,490 p=59493 u=root |  PLAY [sanity] *******************************************************************************************************************************************************************************
+2018-09-28 11:19:48,505 p=59493 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-28 11:19:51,851 p=59493 u=root |  ok: [172.18.102.86]
+2018-09-28 11:19:52,123 p=59493 u=root |  TASK [Executing something] ******************************************************************************************************************************************************************
+2018-09-28 11:19:52,962 p=59493 u=root |  changed: [172.18.102.86]
+2018-09-28 11:19:53,257 p=59493 u=root |  TASK [debug] ********************************************************************************************************************************************************************************
+2018-09-28 11:19:53,312 p=59493 u=root |  ok: [172.18.102.86] => {
+    "msg": "Linux mo-2bcccf474 2.6.32-696.1.1.el6.x86_64 #1 SMP Tue Mar 21 12:19:18 EDT 2017 x86_64 x86_64 x86_64 GNU/Linux"
+}
+2018-09-28 11:19:53,321 p=59493 u=root |  PLAY [test] *********************************************************************************************************************************************************************************
+2018-09-28 11:19:53,327 p=59493 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-28 11:19:57,820 p=59493 u=root |  ok: [172.18.102.120]
+2018-09-28 11:19:58,071 p=59493 u=root |  TASK [command] ******************************************************************************************************************************************************************************
+2018-09-28 11:19:59,862 p=59493 u=root |  changed: [172.18.102.120]
+2018-09-28 11:20:00,188 p=59493 u=root |  TASK [debug] ********************************************************************************************************************************************************************************
+2018-09-28 11:20:00,251 p=59493 u=root |  ok: [172.18.102.120] => {
+    "msg": [
+        "apigee-service: apigee-cassandra: OK", 
+        "apigee-service: apigee-openldap: OK", 
+        "apigee-service: apigee-postgresql: OK", 
+        "apigee-service: apigee-qpidd: OK", 
+        "apigee-service: apigee-zookeeper: OK", 
+        "apigee-service: edge-management-server: OK", 
+        "apigee-service: edge-message-processor: OK", 
+        "apigee-service: edge-postgres-server: OK", 
+        "apigee-service: edge-qpid-server: OK", 
+        "apigee-service: edge-router: OK", 
+        "apigee-service: edge-sap-ui: OK"
+    ]
+}
+2018-09-28 11:20:00,253 p=59493 u=root |  PLAY RECAP **********************************************************************************************************************************************************************************
+2018-09-28 11:20:00,253 p=59493 u=root |  172.18.102.120             : ok=3    changed=1    unreachable=0    failed=0   
+2018-09-28 11:20:00,253 p=59493 u=root |  172.18.102.86              : ok=3    changed=1    unreachable=0    failed=0   
+2018-09-28 13:39:29,801 p=2443 u=root |  PLAY [Playbook for log rotation] ************************************************************************************************************************************************************
+2018-09-28 13:39:29,827 p=2443 u=root |  TASK [Gathering Facts] **********************************************************************************************************************************************************************
+2018-09-28 13:39:34,465 p=2443 u=root |  ok: [172.18.102.120]
+2018-09-28 13:39:34,736 p=2443 u=root |  TASK [command execution for ip address] *****************************************************************************************************************************************************
+2018-09-28 13:39:35,914 p=2443 u=root |  changed: [172.18.102.120]
+2018-09-28 13:39:36,198 p=2443 u=root |  TASK [tar] **********************************************************************************************************************************************************************************
+2018-09-28 13:39:37,700 p=2443 u=root |  changed: [172.18.102.120]
+2018-09-28 13:39:37,958 p=2443 u=root |  TASK [moving] *******************************************************************************************************************************************************************************
+2018-09-28 13:41:15,279 p=2443 u=root |   [ERROR]: User interrupted execution
+

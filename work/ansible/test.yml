@@ -1,0 +1,9 @@
+---
+- name: test
+  hosts: test 
+  tasks:
+   -  name: command
+      script: shell.sh
+      register: output
+
+   -  debug: msg="{{output.stdout_lines}}"

@@ -1,0 +1,9 @@
+---
+- hosts: sanity
+  tasks: 
+  - name: Executing something
+    command: uname -a
+    register: output
+
+  - debug: msg="{{output.stdout}}"
+
