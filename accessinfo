@@ -1,0 +1,4 @@
+
+ssh  -t ccloud@$i "wget https://www.dropbox.com/s/icv8iv3x4sfe22j/dnsupdatescript.sh?dl=0;sudo mv dnsupdatescript.sh?dl=0 dnsupdatescript.sh;sudo sh -x dnsupdatescript.sh;sudo rm dnsupdatescript.sh"
+
+
